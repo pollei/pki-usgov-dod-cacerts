@@ -1,0 +1,16 @@
+
+=== easy fedora way ===
+dnf copr enable spollei/dod_firefox_cfg ; dnf install pki-usgov-dod-cacerts firefox-usgov-dod-cfg ;
+
+
+==== hard way subject to change -- read the sources carefully ===
+dnf install perl firefox nss-util perl-Convert-ASN1 perl-Convert-PEM perl-Crypt-X509 openssl
+./wget_fetch
+./extract_x509.sh
+./make_rpmbuild_sources.sh
+# spectool -g foo.spec
+rpmbuild ~/rpmbuild/SPECS/pki-usgov-dod-cacerts.spec
+rpmbuild ~/rpmbuild/SPECS/firefox-usgov-dod-cfg.spec
+rpm -i ~/rpmbuild/RPMS/noarch/pki-usgov-dod*
+rpm -i ~/rpmbuild/RPMS/noarch/pki-usgov-dod-cacerts*
+

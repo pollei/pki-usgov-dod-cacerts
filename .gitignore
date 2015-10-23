@@ -1,0 +1,3 @@
+pki-usgov-dod/cacerts/*.txt
+pki-usgov-dod/cacerts/*.pem
+pki-usgov-dod/cacerts/*.crt

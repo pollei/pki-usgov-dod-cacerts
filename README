@@ -1,0 +1,25 @@
+
+Help install certs in a firefox profile
+
+firefox-usgov-dod-cfg-cli.pl
+  The command that installs certs, and sets up coolkey for cac-card access
+  It changes only one firefox profile
+  example usage: `./dod_firefox_cli_cfg.pl DOD-default`
+
+wget_fetch.sh
+  fetchs the raw certs, most of which are pkcs7
+  uses wget_fetchlist.txt
+
+extract_x509.sh
+  splits the pkcs7 certs into x.509 pem certs
+  pkcs7_split.pl is used internaly
+
+make_rpmbuild_sources.sh
+  creates ~/rpmbuild/SOURCES/ and puts content there
+
+Here were some certs I couldn't download; hopefully nobody needed them
+# http://fpkia.gsa.gov/FBCA/CAcertsIssuedByFBCA.p7c
+# http://fpkia.gsa.gov/FBCA/CAcertsIssuedToFBCA.p7c
+# http://fpkia.gsa.gov/CommonPolicy/CommonPolicyRoot.p7c
+# http://fpkia.gsa.gov/CommonPolicy/CAcertsIssuedByCommonPolicy.p7c
+# http://http.fpki.gov/bridge/caCertsIssuedByfbca.p7c
