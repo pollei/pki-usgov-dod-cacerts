@@ -23,3 +23,16 @@ Here were some certs I couldn't download; hopefully nobody needed them
 # http://fpkia.gsa.gov/CommonPolicy/CommonPolicyRoot.p7c
 # http://fpkia.gsa.gov/CommonPolicy/CAcertsIssuedByCommonPolicy.p7c
 # http://http.fpki.gov/bridge/caCertsIssuedByfbca.p7c
+
+
+Too many of the US Government's cert are too weak
+# http://www.pcworld.com/article/2877672/the-end-for-1024bit-ssl-certificates-is-near-mozilla-kills-a-few-more.html
+# https://blog.mozilla.org/security/2015/01/28/phase-2-phasing-out-certificates-with-1024-bit-rsa-keys/
+# https://blog.mozilla.org/security/2015/10/20/continuing-to-phase-out-sha-1-certificates/
+# [[ Show the “Untrusted Connection” error whenever a SHA-1 certificate issued after January 1, 2016, is encountered in Firefox
+# Show the “Untrusted Connection” error whenever a SHA-1 certificate is encountered in Firefox after January 1, 2017 ...
+#  in light of recent attacks on SHA-1, we are also considering the feasibility of having a cut-off date as early as July 1, 2016. ]]
+# http://www.securityweek.com/mozilla-could-start-rejecting-sha1-certificates-sooner-planned
+# https://blog.digicert.com/mozilla-add-sha-1-security-warnings/
+
+# https://www.tbs-certificates.co.uk/FAQ/en/microsoft_depreciation_sha1.html
