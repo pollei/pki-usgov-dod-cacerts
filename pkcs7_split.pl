@@ -21,7 +21,7 @@
 use strict;
 use warnings;
 use utf8;
-use 5.016;
+use 5.010;
 #use English;
 
 # dnf install perl-Digest-CRC
